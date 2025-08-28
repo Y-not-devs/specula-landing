@@ -11,21 +11,14 @@
 <body>
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-10">
-        <nav class="mx-auto flex justify-between items-center px-16 py-8 z-20">
+        <nav class="mx-auto flex justify-center items-center px-16 py-8 z-20">
             <a href="#hero" class="text-5xl font-extrabold text-indigo-400 tracking-tight">Specula</a>
-            <div class="flex space-x-8">
-                <a href="#features" class="text-white hover:text-indigo-400 font-semibold transition">Features</a>
-                <a href="#workflow" class="text-white hover:text-indigo-400 font-semibold transition">Workflow</a>
-                <a href="#audience" class="text-white hover:text-indigo-400 font-semibold transition">Audience</a>
-                <a href="#tech" class="text-white hover:text-indigo-400 font-semibold transition">Tech Stack</a>
-                <a href="#contact" class="text-white hover:text-indigo-400 font-semibold transition">Contact</a>
-            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section flex items-center justify-center text-center text-white">
-        <video autoplay loop muted preload="metadata" alt="Analytics dashboard" class="hero-img-bg -z-1">
+        <video autoplay loop muted preload="metadata" alt="Analytics dashboard" class="hero-video-bg -z-1">
             <source src="media/meeting.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -41,7 +34,7 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="max-w-[96rem] mx-auto mt-20 px-8 pt-32">
+    <section id="features" class="max-w-[96rem] mx-auto mt-4 px-8 pt-32">
         <h3 class="text-3xl font-bold text-center text-indigo-300 mb-10">Key Features</h3>
         <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
             <div class="bg-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-center">
@@ -73,7 +66,7 @@
     </section>
 
     <!-- Workflow Timeline -->
-    <section id="workflow" class="max-w-8xl mx-auto mt-20 px-8 pt-32">
+    <section id="workflow" class="max-w-8xl mx-auto mt-4 px-8 pt-32">
         <h3 class="text-3xl font-bold text-center text-indigo-300 mb-10">How It Works</h3>
         <div class="flex flex-col items-center">
             <div class="relative w-full max-w-[100rem] mx-auto flex items-center justify-between">
@@ -81,25 +74,25 @@
                 <div class="absolute top-6 left-0 right-0 h-1 bg-indigo-700 rounded-full" style="z-index:0;"></div>
                 <!-- Steps -->
                 <div class="relative flex w-full justify-between items-center z-10">
-                    <div class="flex flex-col items-center w-1/5">
+                    <div class="flex flex-col justify-start items-center w-1/5">
                         <div class="bg-indigo-400 border-4 border-indigo-300 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-lg shadow-lg">1</div>
-                        <span class="mt-4 text-gray-100 font-semibold text-center">Data Collection</span>
+                        <span class="mt-4 text-gray-100 font-semibold text-center text-xs">Collection</span>
                     </div>
-                    <div class="flex flex-col items-center w-1/5">
+                    <div class="flex flex-col justify-start items-center w-1/5">
                         <div class="bg-indigo-400 border-4 border-indigo-300 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-lg shadow-lg">2</div>
-                        <span class="mt-4 text-gray-100 font-semibold text-center">Storage</span>
+                        <span class="mt-4 text-gray-100 font-semibold text-center text-xs">Storage</span>
                     </div>
-                    <div class="flex flex-col items-center w-1/5">
+                    <div class="flex flex-col justify-start items-center w-1/5">
                         <div class="bg-indigo-400 border-4 border-indigo-300 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-lg shadow-lg">3</div>
-                        <span class="mt-4 text-gray-100 font-semibold text-center">Parsing</span>
+                        <span class="mt-4 text-gray-100 font-semibold text-center text-xs">Parsing</span>
                     </div>
-                    <div class="flex flex-col items-center w-1/5">
+                    <div class="flex flex-col justify-start items-center w-1/5">
                         <div class="bg-indigo-400 border-4 border-indigo-300 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-lg shadow-lg">4</div>
-                        <span class="mt-4 text-gray-100 font-semibold text-center">Analytics</span>
+                        <span class="mt-4 text-gray-100 font-semibold text-center text-xs">Analytics</span>
                     </div>
-                    <div class="flex flex-col items-center w-1/5">
+                    <div class="flex flex-col justify-start items-center w-1/5">
                         <div class="bg-indigo-400 border-4 border-indigo-300 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-lg shadow-lg">5</div>
-                        <span class="mt-4 text-gray-100 font-semibold text-center">Visualization</span>
+                        <span class="mt-4 text-gray-100 font-semibold text-center text-xs">Visualization</span>
                     </div>
                 </div>
             </div>
@@ -107,7 +100,7 @@
     </section>
 
     <!-- Merged Audience, Mission, and Tech Stack Section -->
-    <section class="max-w-7xl mx-auto mt-20 flex flex-col md:flex-row gap-8 pt-16">
+    <section class="max-w-7xl mx-auto mt-4 flex flex-col md:flex-row gap-8 pt-16">
         <!-- Target Audience -->
         <div class="bg-[#232323] rounded-2xl shadow-lg p-8 flex-1 flex flex-col items-center justify-start">
             <h3 class="text-2xl font-bold mb-4 text-white">Target Audience</h3>
@@ -150,6 +143,15 @@
                 <span class="bg-indigo-900 px-3 py-1 rounded-full font-mono text-indigo-200 shadow transition duration-200 hover:bg-indigo-700 hover:text-white hover:scale-105 cursor-pointer">OpenAI/Claude API</span>
                 <span class="bg-indigo-900 px-3 py-1 rounded-full font-mono text-indigo-200 shadow transition duration-200 hover:bg-indigo-700 hover:text-white hover:scale-105 cursor-pointer">Web Landing</span>
             </div>
+        </div>
+    </section>
+
+    <!-- Video Link Section -->
+    <section id="videolink" class="max-w-7xl mx-auto mt-4 px-8 pt-32">
+        <div class="text-center">
+            <h2 class="text-5xl font-bold text-indigo-300 mb-10">Want to hear more about our project?</h2>
+            <h2 class="text-3xl font-bold text-white mb-10">Then let's move to the next link!</h2>
+            <a href="" class="text-2xl underline text-blue-300">>>>Link to the video!</a>
         </div>
     </section>
 
